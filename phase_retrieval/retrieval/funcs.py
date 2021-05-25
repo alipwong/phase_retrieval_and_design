@@ -125,3 +125,8 @@ def show_binarisation(phases, history, start, epochs):
 #     plt.subplots_adjust(wspace = 0.4)
 
 #     plt.show()
+
+def img_zoom(img, s = 50):
+    c = img.shape[0]//2; 
+    zoomed_img = img[c-s:c+s, c-s:c+s]
+    return zoomed_img
